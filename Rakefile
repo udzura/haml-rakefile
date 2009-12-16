@@ -108,6 +108,7 @@ namespace :rollback do
     end
     puts "Rollback Successful"
   end
+  desc "rollback converted css into sass"
   task :sass do
     check_bin :css2sass
     Rake::FileList.new("**/*.css").each do |fpath|

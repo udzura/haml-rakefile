@@ -50,9 +50,9 @@ task :convert do
   Rake::FileList.new("**/*.haml", "**/*.sass").each do |fpath|
     case fpath
     when /\.haml$/
-      do_conv(:html2haml, fpath)
+      do_conv(:haml, fpath)
     when /\.sass$/
-      do_conv(:css2sass, fpath)
+      do_conv(:sass, fpath)
     end
   end
   puts "Convert Successful"

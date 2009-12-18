@@ -1,0 +1,50 @@
+!!! XML
+!!!
+%html
+  %head
+    %meta{ 'http-equiv' => 'content', :content => 'text/html; charset=utf-8'}
+    %title haml-rakefile README
+  %body
+    %h1 haml-rakefile README
+    %h2 what is haml-rakefile
+    %p convert your haml/sass files into html/css by one command:
+    %blockquote
+      %ul
+        %li
+          %code rake convert
+    %h2 install
+    % before you do:
+    %blockquote
+      %ul
+        %li
+          %code sudo gem install rake
+        %li
+          %code sudo gem install haml
+        %li
+          %code sudo gem install hpricot # if you use "rake rollback"
+    % and then,
+    %blockquote
+      %ul
+        %li
+          %code cd /your/web/root/
+        %li
+          %code wget http://github.com/udzura/haml-rakefile/raw/master/Rakefile
+    %h2 usage
+    %blockquote
+      %ul
+        %li
+          %code rake convert
+    %p when you want to rollback, do that:
+    %blockquote
+      %ul
+        %li
+          %code rake rollback
+    %h2 misc
+    %blockquote
+      %ul
+        %li
+          %code rake -T
+    %h2 copyright
+    %blockquote
+      %ul
+        %li (c) Udzura Kondo %q(udzura[atmark]udzura.jp).sub(/\[.*\]/, '@')
